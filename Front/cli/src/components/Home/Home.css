@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+.html-size {
+  background-color: #d2d2d2;
+ 
+}
+
+.home-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  font-size: 8rem;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+  margin-bottom: 2rem;
+}
+
+.area-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.area-item {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #2561E7;
+  color: #ffffff;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.special-area {
+  background-color: #e5e7eb;
+  color: #2561E7;
+  
+}
+
+#edit-link {
+  text-decoration: none;
+}
+
+.area-item:hover {
+  background-color: #0480FC;
+  transform: scale(1.1);
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+
+
+.area-item:active {
+  transform: scale(0.9);
+}
+
+.area-item.special-area:hover {
+  background-image: linear-gradient(45deg, #fa8383, #f44444, #ee1a1a);
+  background-size: 200% 200%;
+  animation: gradient-animation 8s ease-in-out infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

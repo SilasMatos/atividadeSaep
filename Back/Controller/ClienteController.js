@@ -1,9 +1,8 @@
 const db = require('../Models/Connection');
 
-// Função para obter todos os exemplos do banco de dados
-const getAllExamples = (req, res) => {
+const getClientes = (req, res) => {
   try {
-    db.query('SELECT * FROM alocacao', (err, results) => {
+    db.query('select * from clientes', (err, results) => {
       if (err) {
         console.error('Erro ao obter os exemplos do banco de dados: ' + err.stack);
         return res.status(500).json({ error: 'Erro ao obter os exemplos.' });
@@ -16,9 +15,12 @@ const getAllExamples = (req, res) => {
   }
 };
 
+
 module.exports = {
-  getAllExamples,
+  getClientes,
+  
 };
+
 
 
 
